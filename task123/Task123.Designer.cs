@@ -40,6 +40,8 @@ namespace task123
             this.secondNamelabel = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.birthDateLabel = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +58,7 @@ namespace task123
             // 
             // classTextBox
             // 
-            this.classTextBox.Location = new System.Drawing.Point(117, 281);
+            this.classTextBox.Location = new System.Drawing.Point(122, 281);
             this.classTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.classTextBox.Name = "classTextBox";
             this.classTextBox.Size = new System.Drawing.Size(82, 29);
@@ -134,12 +136,33 @@ namespace task123
             this.nameLabel.TabIndex = 10;
             this.nameLabel.Text = "Име";
             // 
+            // birthDateLabel
+            // 
+            this.birthDateLabel.AutoSize = true;
+            this.birthDateLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.birthDateLabel.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.birthDateLabel.Location = new System.Drawing.Point(122, 315);
+            this.birthDateLabel.Name = "birthDateLabel";
+            this.birthDateLabel.Size = new System.Drawing.Size(150, 24);
+            this.birthDateLabel.TabIndex = 22;
+            this.birthDateLabel.Text = "Дата на раждане";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(122, 336);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 21;
+            // 
             // Task123
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(591, 392);
+            this.Controls.Add(this.birthDateLabel);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.classTextBox);
             this.Controls.Add(this.classLabel);
@@ -170,6 +193,8 @@ namespace task123
         private System.Windows.Forms.Label secondNamelabel;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Label birthDateLabel;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
